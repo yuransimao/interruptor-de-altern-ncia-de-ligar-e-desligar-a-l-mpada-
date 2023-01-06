@@ -119,7 +119,7 @@ label input:checked ~ span ion-icon{
 /*daylight*/
 
 .active{
-    background: radial-gradient(#555, #444);
+    background: radial-gradient(rgb(53, 52, 52), rgb(12, 12, 12));
 }
 .active .bulb::after{
 content: '';
@@ -140,6 +140,14 @@ filter: blur(40px);
     height: 80px;
     background: #fffc3d;
     border-radius: 50%;
+    z-index: 3;
+    box-shadow: 0 0 50px #fffc3d,
+    0 0 100px #fffc3d,
+    0 0 150px #fffc3d,
+    0 0 200px #fffc3d,
+    0 0 250px #fffc3d,
+    0 0 30px #fffc3d,
+    0 0 350px #fffc3d;
  
  }
  
@@ -152,6 +160,14 @@ filter: blur(40px);
     border-top: 30px solid #000;
     border-radius: 10px;
     background:#fffc3d;
+    z-index: 3;
+    box-shadow: 0 0 50px #fffc3d,
+    0 0 100px #fffc3d,
+    0 0 150px #fffc3d,
+    0 0 200px #fffc3d,
+    0 0 250px #fffc3d,
+    0 0 30px #fffc3d,
+    0 0 350px #fffc3d;
 }
 
 .active .bulb span:nth-child(1){
