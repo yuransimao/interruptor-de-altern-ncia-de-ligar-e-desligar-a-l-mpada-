@@ -121,7 +121,28 @@ label input:checked ~ span ion-icon{
 .active{
     background: radial-gradient(#555, #444);
 }
+.active .bulb::after{
+content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 129px;
+height: 120px;
+background: #fffc3d;
+border-radius: 50%;
+filter: blur(40px);
+}
 
+.active .bulb{
+    position: relative; 
+    width: 80px;
+    height: 80px;
+    background: #fffc3d;
+    border-radius: 50%;
+ 
+ }
+ 
 .active .bulbp{
     position: absolute;
     top:-3rem;
@@ -130,5 +151,30 @@ label input:checked ~ span ion-icon{
     height:80px;
     border-top: 30px solid #000;
     border-radius: 10px;
-    background:#444;
+    background:#fffc3d;
+}
+
+.active .bulb span:nth-child(1){
+    position:absolute;
+    top:-12px;
+    left:-0.4rem;
+    display: block;
+    width: 30px;
+    height:30px;
+    background:transparent;
+    transform: rotate(342deg);
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0 10px #fffc3d;
+}
+.active .bulb span:nth-child(2){
+    position:absolute;
+    top:-16px;
+    right:-0.2rem;
+    display: block;
+    width: 30px;
+    height:30px;
+    background:transparent;
+    transform: rotate(17deg);
+    border-bottom-left-radius: 40px;
+    box-shadow: -20px 20px 0 10px #fffc3d;
 }
