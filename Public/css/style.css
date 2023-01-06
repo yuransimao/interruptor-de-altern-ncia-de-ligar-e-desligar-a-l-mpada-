@@ -62,7 +62,14 @@ body{
     
 }
 
-
+.wire{
+    position: absolute;
+    left: calc(50% - 2px) ;
+    bottom: 50%;
+    width: 5px;
+    height: 40vh;
+    background-color: #000;
+}
 label{
     position: relative;
     width: 150px;
